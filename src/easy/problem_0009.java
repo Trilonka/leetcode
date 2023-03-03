@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ Given an integer x, return true if x is a palindrome, and false otherwise.
+ */
 public class problem_0009 {
 
     public boolean isPalindrome(int x) {

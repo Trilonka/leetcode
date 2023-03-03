@@ -1,7 +1,7 @@
 package easy;
 
 /**
- Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
+ Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
 
  Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
 
@@ -9,17 +9,15 @@ package easy;
 
  Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
  */
-public class problem_0026 {
+public class problem_0027 {
 
-    public int removeDuplicates(int[] nums) {
-        int k = 1;
-        int prev = nums[0];
-        for (int i = 1; i < nums.length; ++i) {
-            if (nums[i] != prev) {
-                nums[k++] = nums[i];
-                prev = nums[i];
+    public int removeElement(int[] nums, int val) {
+        int index = 0;
+        for (int i = 0; i<nums.length; ++i) {
+            if (nums[i] != val) {
+                nums[index++] = nums[i];
             }
         }
-        return k;
+        return index;
     }
 }

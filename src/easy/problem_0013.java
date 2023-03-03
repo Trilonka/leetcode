@@ -3,6 +3,9 @@ package easy;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ Given a roman numeral, convert it to an integer.
+ */
 public class problem_0013 {
 
     public int romanToInt(String s) {
