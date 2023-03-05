@@ -8,7 +8,7 @@ package medium;
  */
 public class problem_0007 {
 
-    public static int reverse(int x) {
+    public int reverse(int x) {
         int sign = x < 0 ? -1 : 1;
         x = Math.abs(x);
         int result = 0;
@@ -20,9 +20,5 @@ public class problem_0007 {
             x /= 10;
         }
         return sign*result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(reverse(Integer.MIN_VALUE+8));
     }
 }

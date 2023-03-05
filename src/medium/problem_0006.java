@@ -15,7 +15,7 @@ import java.util.Arrays;
  */
 public class problem_0006 {
 
-    public static String convert(String s, int numRows) {
+    public String convert(String s, int numRows) {
         if (s.length() < 2 || numRows < 2) return s;
         String[] result = new String[numRows];
         Arrays.fill(result, "");
@@ -25,9 +25,5 @@ public class problem_0006 {
             result[ost < numRows ? ost : div-ost] += s.charAt(i);
         }
         return String.join("", result);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(convert("PAYPALISHIRING", 4));
     }
 }
