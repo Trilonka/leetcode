@@ -15,7 +15,8 @@ public class problem_0121 {
         for (int i = 1; i < prices.length; i++) {
             if (prices[i] < lastMinPrice) {
                 lastMinPrice = prices[i];
-            } else {
+            }
+            else {
                 maxProfit = Math.max(maxProfit, prices[i] - lastMinPrice);
             }
         }
